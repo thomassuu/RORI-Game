@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other) 
     {
         GameObject effect = Instantiate(hitFX, this.transform.position, Quaternion.identity);
-        Destroy(effect, 0.5f);
+        Destroy(effect, 0.25f);
         Destroy(this.gameObject);
     }
 }
